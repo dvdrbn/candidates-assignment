@@ -16,4 +16,4 @@ scp -v ${@:1:$#-1} $target_server:$target_dir |& grep Sink |& awk '{sum += $3} E
 
 # ${@:1:$#-1} - will give all argument except last
 # grep Sink   - will catch lines containing bytes of every file
-# awk '{sum += $3} END {print sum}' - will sum the bytes catched by grep
+# awk '{sum += $3} END {print sum}' - will sum the bytes caught by grep
